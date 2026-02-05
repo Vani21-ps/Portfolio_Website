@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Vani Jain</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="bg-[#f5f0eb] text-[#3b2f2f] font-sans">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav
+    class="fixed top-0 left-0 w-full bg-[#fffaf8] bg-opacity-90 backdrop-blur-sm z-50 px-6 py-4 flex justify-between items-center shadow-sm">
+
+    <div class="text-xl font-bold select-none">Vani Jain</div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-6 uppercase font-semibold text-sm">
+      <li><a href="index.html" class="hover:text-[#b57c63]">Home</a></li>
+      <li><a href="about.html" class="hover:text-[#b57c63]">About</a></li>
+      <li><a href="skills.html" class="hover:text-[#b57c63]">Skills</a></li>
+      <li><a href="certifications.html" class="hover:text-[#b57c63]">Certifications</a></li>
+      <li><a href="projects.html" class="hover:text-[#b57c63]">Projects</a></li>
+      <li><a href="contact.html" class="text-[#b57c63]">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Toggle -->
+    <button id="menu-toggle" class="md:hidden">
+      <i data-feather="menu" class="w-7 h-7"></i>
+    </button>
+  </nav>
+
+  <!-- Overlay -->
+  <div id="menu-overlay" class="fixed inset-0 bg-black/60 hidden z-40"></div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="fixed inset-0 z-[999] bg-[#fffaf6] bg-opacity-95 backdrop-blur-md
+           flex flex-col items-center justify-center gap-6
+           text-lg uppercase font-semibold tracking-widest
+           text-[#b57c63] scale-0 transition-transform duration-300">
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <section class="max-w-6xl mx-auto px-6 pt-32 pb-20 text-center">
+    <h1 class="text-4xl font-extrabold mb-4">Let’s Build Something Together</h1>
+    <p class="max-w-3xl mx-auto text-[#6b5247]">
+      More than just a contact page — this is where collaboration begins.
+    </p>
+  </section>
+
+  <!-- Main Card -->
+  <section class="max-w-6xl mx-auto px-6 pb-28">
+    <div class="bg-[#f5eae1] rounded-3xl shadow-lg p-10 grid md:grid-cols-3 gap-10">
+
+      <!-- Profile -->
+      <div class="md:col-span-1 text-center">
+        <img src="IMAGES/MAINPICTURE.jpg"
+          alt="Vani Jain"
+          class="w-40 h-40 mx-auto rounded-full object-cover shadow-lg mb-6" />
+
+        <h2 class="text-2xl font-bold">Vani Jain</h2>
+        <p class="text-sm text-[#6b5247] mb-4">
+          Full Stack Developer <br /> AI-Driven Web Solutions
+        </p>
+
+        <div class="flex justify-center gap-4">
+          <a href="https://github.com/Vani21-ps" target="_blank"
+            class="px-4 py-2 bg-[#4a3a3a] text-white rounded-md text-sm hover:opacity-90">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/vanijain-dev/" target="_blank"
+            class="px-4 py-2 bg-[#0077b5] text-white rounded-md text-sm hover:opacity-90">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact + Highlights -->
+      <div class="md:col-span-2 space-y-10">
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contact Details</h3>
+
+          <div class="flex items-start gap-4 mb-4">
+            <div class="p-3 rounded-md bg-[#b66e51] text-white">
+              📧
+            </div>
+            <div>
+              <p class="font-semibold">Email</p>
+              <p class="text-sm">vanijain1982@yahoo.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="p-3 rounded-md bg-[#b66e51] text-white">
+              📍
+            </div>
+            <div>
+              <p class="font-semibold">Location</p>
+              <p class="text-sm">Haryana, India</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Work With Me -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Why Work With Me?</h3>
+          <ul class="space-y-3 text-sm text-[#6b5247]">
+            <li>✔ Strong Full Stack foundation (MERN, Java, Node)</li>
+            <li>✔ AI-integrated applications & prompt engineering</li>
+            <li>✔ Clean UI + scalable backend mindset</li>
+            <li>✔ Hands-on industry simulations (Walmart, JP Morgan)</li>
+          </ul>
+        </div>
+
+        <!-- Highlights -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Highlighted Work</h3>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+
+            <div class="bg-[#fffaf8] rounded-xl p-4 shadow">
+              <p class="font-semibold">🚀 TaskZen</p>
+              <p class="text-xs text-[#6b5247]">
+                AI-powered task manager with authentication & priorities
+              </p>
+            </div>
+
+            <div class="bg-[#fffaf8] rounded-xl p-4 shadow">
+              <p class="font-semibold">🛒 JobPortal</p>
+              <p class="text-xs text-[#6b5247]">
+                Full-stack MERN platform
+              </p>
+            </div>
+
+            <div class="bg-[#fffaf8] rounded-xl p-4 shadow">
+              <p class="font-semibold">🤖 Google AI Essentials</p>
+              <p class="text-xs text-[#6b5247]">
+                Practical AI & productivity certification
+              </p>
+            </div>
+
+            <div class="bg-[#fffaf8] rounded-xl p-4 shadow">
+              <p class="font-semibold">🏦 Walmart Simulation</p>
+              <p class="text-xs text-[#6b5247]">
+                Real-world software engineering experience
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#4a3a3a] text-[#e9d8cd] py-10 text-center">
+    <p class="font-semibold text-lg mb-2">
+      <span class="text-[#b66e51]">&lt; / &gt;</span> Vani Jain
+    </p>
+    <p class="text-sm">Full Stack Developer | Building intelligent solutions</p>
+    <p class="mt-4">Made with <span class="text-[#b66e51]">♥</span></p>
+    <p class="mt-6 text-xs">© 2025 Vani Jain. All rights reserved.</p>
+  </footer>
+ <script>
+    feather.replace();
+
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+    const overlay = document.getElementById("menu-overlay");
+
+    toggle.onclick = () => {
+      menu.classList.toggle("scale-0");
+      overlay.classList.toggle("hidden");
+    };
+
+    overlay.onclick = () => {
+      menu.classList.add("scale-0");
+      overlay.classList.add("hidden");
+    };
+  </script>
+
+</body>
+</html>

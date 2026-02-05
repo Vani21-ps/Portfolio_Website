@@ -21,16 +21,15 @@
       <span><></span> Vani Jain
     </div>
     <ul class="hidden md:flex gap-8 uppercase tracking-wider font-semibold text-sm">
-      <li><a href="#about" class="nav-link hover:text-[#b57c63] transition">About</a></li>
-      <li><a href="#skills" class="nav-link hover:text-[#b57c63] transition">Skills</a></li>
-      <li><a href="#works" class="nav-link hover:text-[#b57c63] transition">Works</a></li>
-      <li><a href="#contact" class="nav-link hover:text-[#b57c63] transition">Contact</a></li>
+      <li><a href="about.html" class="nav-link hover:text-[#b57c63] transition">About</a></li>
+      <li><a href="skills.html" class="nav-link hover:text-[#b57c63] transition">Skills</a></li>
+      <li><a href="certifications.html" class="nav-link hover:text-[#b57c63] transition">Certifications</a></li>
+      <li><a href="projects.html" class="nav-link hover:text-[#b57c63] transition">Projects</a></li>
+      <li><a href="contact.html" class="nav-link hover:text-[#b57c63] transition">Contact</a></li>
     </ul>
-    <div
-      class="hidden md:block py-[6px] px-3 border border-[#b57c63] rounded-md text-xs font-mono tracking-wide cursor-default select-text bg-gray-800 bg-opacity-70 text-white">
-      vanijain1982@yahoo.com
-    </div>
-    <button id="menu-toggle" aria-label="Toggle menu" class="md:hidden focus:outline-none z-[10000]">
+   
+    <button id="menu-btn" aria-label="Toggle menu" class="md:hidden">
+
       <i data-feather="menu" class="w-8 h-8"></i>
     </button>
   </nav>
@@ -40,12 +39,16 @@
 
 <!-- Mobile Menu -->
 <div id="mobile-menu"
-  class="fixed inset-0 z-[999] bg-[#fffaf6] bg-opacity-95 backdrop-blur-md flex flex-col items-center justify-center gap-6 text-2xl uppercase font-bold tracking-widest text-[#b57c63] transition-transform duration-300 origin-top scale-0">
+  class="fixed inset-0 z-[999] bg-[#fffaf6] bg-opacity-95 backdrop-blur-md
+         hidden flex flex-col items-center justify-center gap-6 text-2xl
+         uppercase font-bold tracking-widest text-[#b57c63]">
 
-<a href="#about" class="nav-link">About Me</a>
-  <a href="#skills" class="nav-link">Skills</a>
-  <a href="#works" class="nav-link">Works</a>
-  <a href="#contact" class="nav-link">Contact</a>
+
+<a href="about.html" class="nav-link">About Me</a>
+  <a href="skills.html" class="nav-link">Skills</a>
+  <a href="certifications.html" class="nav-link">Certifications</a>
+  <a href="projects.html" class="nav-link">Projects</a>
+  <a href="contact.html" class="nav-link">Contact</a>
 </div>
 
 
@@ -55,24 +58,24 @@
       <div class="md:col-span-7 space-y-6 relative">
         <div class="flex items-center gap-2 text-[#b57c63] font-semibold tracking-widest text-sm uppercase">
           <i data-feather="plus-circle" class="w-6 h-6"></i>
-          ASPIRING SOFTWARE DEVELOPER
+          SOFTWARE DEVELOPMENT ENGINEER | FULL STACK DEVELOPER
         </div>
         <h1 class="text-5xl font-extrabold max-w-3xl">
           Vani Jain is <span class="text-[#b57c63]">Right Here!</span>
         </h1>
         <p class="max-w-xl text-[#7D6650] leading-relaxed">
-          With a passion for clean design and smart functionality, I love turning ideas into interactive, user-friendly digital experiences that leave a lasting impression.
+          Building scalable web applications with strong backend logic, clean APIs, and efficient data handling.
         </p>
         <div class="flex flex-wrap gap-4">
           <a href="#contact"
             class="bg-[#eecdc2] text-[#5e4632] px-6 py-3 rounded-md font-semibold hover:bg-[#ddb6aa] transition focus:outline-none focus:ring-4 focus:ring-[#eecdc2]/50 flex items-center gap-3">
             <i data-feather="send" class="w-5 h-5"></i> Contact Me
           </a>
-          <a href="IMAGES/Updated RESUME.png" download
+          <a href="IMAGES/Resumee.pdf" download
             class="border border-[#b57c63] hover:bg-[#eecdc2] hover:text-[#5e4632] px-6 py-3 rounded-md font-semibold transition flex items-center gap-3 focus:outline-none focus:ring-4 focus:ring-[#eecdc2]/50">
             <i data-feather="download" class="w-5 h-5"></i> Download Resume
           </a>
-          <a href="#about"
+          <a href="about.html"
             class="border border-[#b57c63] hover:bg-[#eecdc2] hover:text-[#5e4632] px-6 py-3 rounded-md font-semibold transition flex items-center gap-3 focus:outline-none focus:ring-4 focus:ring-[#eecdc2]/50">
             <i data-feather="info" class="w-5 h-5"></i> Know More
           </a>
@@ -279,114 +282,174 @@
 <!-- Skills Section -->
 <section id="skills" class="px-6 md:px-12 py-24 bg-[#fffaf6] text-[#4a3a3a]">
   <div class="max-w-6xl mx-auto">
+    <!-- Section Header -->
     <h2 class="text-3xl md:text-4xl font-extrabold mb-4 flex items-center gap-3">
       <span>
         <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#b66e51]" fill="none"
           viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 01-8 0m8 0a4 4 0 00-8 0m8 0v4m-8-4v4m0 4h8" />
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M16 7a4 4 0 01-8 0m8 0a4 4 0 00-8 0m8 0v4m-8-4v4m0 4h8" />
         </svg>
       </span>
       Skills & Expertise
     </h2>
     <p class="text-base md:text-lg mb-12 text-[#855f4c]">
-      A versatile toolkit spanning frontend and backend development, responsive design, and database management.
+      A versatile toolkit spanning frontend, backend, databases, languages, and advanced concepts for full-stack development.
     </p>
 
-    <div
-      class="p-6 border border-[#d4b8aa] rounded-xl grid gap-6 bg-[#f5eae1] text-[#4a3a3a] hover:shadow-[#f5d4bd] hover:shadow-lg hover:scale-[1.02] transition cursor-default">
-      <h3 class="flex items-center gap-2 text-xl font-bold mb-4 text-[#4a3a3a]">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#b66e51]" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
-        </svg>
-        Technical Proficiency
-      </h3>
+    <!-- Skills Categories -->
+    <div class="space-y-12">
 
-      <!-- Skill Bars -->
-      <div class="space-y-4">
-        <div>
-          <p class="flex justify-between font-semibold">HTML <span>95%</span></p>
-          <div class="w-full bg-[#e9d8cd] rounded-full h-3">
-            <div class="bg-[#b66e51] h-3 rounded-full" style="width: 95%"></div>
+      <!-- Languages -->
+      <div>
+        <h3 class="text-2xl font-bold mb-6 border-b border-[#d4b8aa] pb-2">Languages</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">Java</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Advanced</span>
           </div>
-        </div>
-
-        <div>
-          <p class="flex justify-between font-semibold">CSS <span>90%</span></p>
-          <div class="w-full bg-[#e9d8cd] rounded-full h-3">
-            <div class="bg-[#b66e51] h-3 rounded-full" style="width: 90%"></div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">JavaScript</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Advanced</span>
           </div>
-        </div>
-
-        <div>
-          <p class="flex justify-between font-semibold">React.js <span>85%</span></p>
-          <div class="w-full bg-[#e9d8cd] rounded-full h-3">
-            <div class="bg-[#b66e51] h-3 rounded-full" style="width: 85%"></div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">C++</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Advanced</span>
           </div>
-        </div>
-
-        <div>
-          <p class="flex justify-between font-semibold">JavaScript <span>90%</span></p>
-          <div class="w-full bg-[#e9d8cd] rounded-full h-3">
-            <div class="bg-[#b66e51] h-3 rounded-full" style="width: 90%"></div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">Python</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Basic / Learning</span>
           </div>
-        </div>
-
-        <div>
-          <p class="flex justify-between font-semibold">HBS <span>85%</span></p>
-          <div class="w-full bg-[#e9d8cd] rounded-full h-3">
-            <div class="bg-[#b66e51] h-3 rounded-full" style="width: 85%"></div>
-          </div>
-        </div>
-
-        <div>
-          <p class="flex justify-between font-semibold">MongoDB <span>88%</span></p>
-          <div class="w-full bg-[#e9d8cd] rounded-full h-3">
-            <div class="bg-[#b66e51] h-3 rounded-full" style="width: 88%"></div>
-          </div>
-        </div>
-
-        <div>
-          <p class="flex justify-between font-semibold">Java <span>82%</span></p>
-          <div class="w-full bg-[#e9d8cd] rounded-full h-3">
-            <div class="bg-[#b66e51] h-3 rounded-full" style="width: 82%"></div>
-          </div>
-        </div>
-
-          <div>
-          <p class="flex justify-between font-semibold">MySQL <span>88%</span></p>
-          <div class="w-full bg-[#e9d8cd] rounded-full h-3">
-            <div class="bg-[#b66e51] h-3 rounded-full" style="width: 88%"></div>
-          </div>
-        </div>
-
-          <div>
-          <p class="flex justify-between font-semibold">DBMS <span>80%</span></p>
-          <div class="w-full bg-[#e9d8cd] rounded-full h-3">
-            <div class="bg-[#b66e51] h-3 rounded-full" style="width: 88%"></div>
-          </div>
-        </div>
-
-          <div>
-          <p class="flex justify-between font-semibold">C++<span>92%</span></p>
-          <div class="w-full bg-[#e9d8cd] rounded-full h-3">
-            <div class="bg-[#b66e51] h-3 rounded-full" style="width: 88%"></div>
-          </div>
-        </div>
-
-          <div>
-          <p class="flex justify-between font-semibold">Node.js <span>90%</span></p>
-          <div class="w-full bg-[#e9d8cd] rounded-full h-3">
-            <div class="bg-[#b66e51] h-3 rounded-full" style="width: 88%"></div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">TypeScript</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
           </div>
         </div>
       </div>
+
+      <!-- Frontend -->
+      <div>
+        <h3 class="text-2xl font-bold mb-6 border-b border-[#d4b8aa] pb-2">Frontend</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">HTML</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Advanced</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">CSS</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Advanced</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">React.js</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Advanced</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">HBS</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div>
+        <h3 class="text-2xl font-bold mb-6 border-b border-[#d4b8aa] pb-2">Backend</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">Node.js</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Advanced</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">Express.js</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Advanced</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">REST APIs</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Advanced</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">WebSocket</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">Socket.io</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">Microservices</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">Monolithic Architecture</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div>
+        <h3 class="text-2xl font-bold mb-6 border-b border-[#d4b8aa] pb-2">Databases</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">MongoDB</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">MySQL</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">PostgreSQL</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">Redis</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Concepts -->
+      <div>
+        <h3 class="text-2xl font-bold mb-6 border-b border-[#d4b8aa] pb-2">Tools & Concepts</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">Git & GitHub</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">MVC Architecture</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">Authentication & Authorization</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">DBMS</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">OOP</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Advanced</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">Basic System Design</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+          <div class="p-4 border border-[#d4b8aa] rounded-xl bg-[#f5eae1] hover:shadow-lg hover:scale-[1.02] transition">
+            <h4 class="font-semibold mb-2">Docker</h4>
+            <span class="inline-block bg-[#b66e51] text-white text-xs font-semibold px-3 py-1 rounded-full">Intermediate</span>
+          </div>
+        </div>
+      </div>
+
     </div>
-</div>
+  </div>
+</section>
 
       
   
-    </section>
+
 
    
 <!-- Certifications Section -->
@@ -559,5 +622,23 @@
 </main>
   <div id="cursor" class="custom-cursor"></div>
   <div id="cursor-follower" class="cursor-follower"></div>
+  <script>
+  feather.replace();
+
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const overlay = document.getElementById("menu-overlay");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    overlay.classList.toggle("hidden");
+  });
+
+  overlay.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+    overlay.classList.add("hidden");
+  });
+</script>
+
 </body>
 </html>

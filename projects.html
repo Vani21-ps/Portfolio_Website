@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Vani Jain</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="bg-[#f5f0eb] text-[#3b2f2f] font-sans">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav
+    class="fixed top-0 left-0 w-full bg-[#fffaf8] bg-opacity-90 backdrop-blur-sm z-50 px-6 py-4 flex justify-between items-center shadow-sm">
+
+    <div class="text-xl font-bold select-none">Vani Jain</div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-6 uppercase font-semibold text-sm">
+      <li><a href="index.html" class="hover:text-[#b57c63]">Home</a></li>
+      <li><a href="about.html" class="hover:text-[#b57c63]">About</a></li>
+      <li><a href="skills.html" class="hover:text-[#b57c63]">Skills</a></li>
+      <li><a href="certifications.html" class="hover:text-[#b57c63]">Certifications</a></li>
+      <li><a href="projects.html" class="text-[#b57c63]">Projects</a></li>
+      <li><a href="contact.html" class="hover:text-[#b57c63]">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Toggle -->
+    <button id="menu-toggle" class="md:hidden">
+      <i data-feather="menu" class="w-7 h-7"></i>
+    </button>
+  </nav>
+
+  <!-- Overlay -->
+  <div id="menu-overlay" class="fixed inset-0 bg-black/60 hidden z-40"></div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="fixed inset-0 z-[999] bg-[#fffaf6] bg-opacity-95 backdrop-blur-md
+           flex flex-col items-center justify-center gap-6
+           text-lg uppercase font-semibold tracking-widest
+           text-[#b57c63] scale-0 transition-transform duration-300">
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <section class="max-w-6xl mx-auto px-6 pt-32 pb-20 text-center">
+    <h1 class="text-4xl font-extrabold mb-4">Projects</h1>
+    <p class="max-w-3xl mx-auto text-[#6b5247]">
+      A complete collection of projects showcasing full-stack development,
+      problem-solving, and modern UI design.
+    </p>
+  </section>
+  <!-- Projects Grid -->
+  <section class="max-w-6xl mx-auto px-6 pb-28">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- 1 Currency Tracker -->
+      <div class="bg-[#f5eae1] rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col">
+        <img src="IMAGES/light.png" class="h-40 object-cover rounded-xl mb-4" />
+        <h3 class="font-bold text-lg mb-2">Currency Tracker</h3>
+        <p class="text-sm text-[#6b5247] mb-4">
+          Real-time exchange rate tracking with interactive charts using REST APIs.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="tag">HTML</span><span class="tag">CSS</span>
+          <span class="tag">JavaScript</span><span class="tag">API</span>
+        </div>
+        <div class="mt-auto">
+          <a href="https://github.com/Vani21-ps/CurrencyTracker" class="link">Code</a>
+          <a href="https://currency-tracker-weld.vercel.app/" class="link">Demo</a>
+        </div>
+      </div>
+
+      <!-- 2 InterviewAce -->
+      <div class="bg-[#f5eae1] rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col">
+        <img src="images/interviewace.png" class="h-40 object-cover rounded-xl mb-4" />
+        <h3 class="font-bold text-lg mb-2">InterviewAce.exe</h3>
+        <p class="text-sm text-[#6b5247] mb-4">
+          Interactive quiz platform for CS interview preparation with timed tests.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="tag">HTML</span><span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="mt-auto">
+          <a href="https://github.com/Vani21-ps/InterviewAce" class="link">Code</a>
+          <a href="https://vani21-ps.github.io/InterviewAce/" class="link">Demo</a>
+        </div>
+      </div>
+
+      <!-- 3 TaskZen -->
+      <div class="bg-[#f5eae1] rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col">
+        <img src="images/taskzen.png" class="h-40 object-cover rounded-xl mb-4" />
+        <h3 class="font-bold text-lg mb-2">TaskZen</h3>
+        <p class="text-sm text-[#6b5247] mb-4">
+          AI-powered task manager with priorities, calendar view and authentication.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="tag">Node.js</span><span class="tag">Express</span>
+          <span class="tag">MongoDB</span><span class="tag">HBS</span>
+        </div>
+        <div class="mt-auto">
+          <a href="https://github.com/Vani21-ps/TaskZen" class="link">Code</a>
+        </div>
+      </div>
+
+     <!-- Linux User Greeting Project -->
+<div class="bg-[#f5eae1] rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col">
+  <img src="IMAGES/LINUX PROJECT.png" class="h-40 object-cover rounded-xl mb-4" />
+  <h3 class="font-bold text-lg mb-2">Linux User Greeting System</h3>
+  <p class="text-sm text-[#6b5247] mb-4">
+    Terminal-based Linux project built using Bash scripting that provides time-based greetings
+    and user management through an interactive menu-driven interface.
+  </p>
+  <div class="flex flex-wrap gap-2 mb-4">
+    <span class="tag">Bash</span>
+    <span class="tag">Linux</span>
+    <span class="tag">Shell Scripting</span>
+    <span class="tag">Dialog</span>
+  </div>
+  <div class="mt-auto">
+    <a href="https://github.com/Vani21-ps/Linux-Project" class="link">Code</a>
+  </div>
+</div>
+
+
+      <!-- 5 JobPortal -->
+      <div class="bg-[#f5eae1] rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col">
+        <img src="IMAGES/jobportal.png" class="h-40 object-cover rounded-xl mb-4" />
+        <h3 class="font-bold text-lg mb-2">JobPortal</h3>
+        <p class="text-sm text-[#6b5247] mb-4">
+          Job portal with task management, reminders and resume uploads.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="tag">MERN</span><span class="tag">Node.js</span>
+          <span class="tag">MongoDB</span>
+        </div>
+        <div class="mt-auto">
+          <a href="https://github.com/Vani21-ps/Java-JobPortal" class="link">Code</a>
+        </div>
+      </div>
+
+      <!-- 6 ATM Simulator -->
+      <div class="bg-[#f5eae1] rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col">
+        <img src="IMAGES/miniatm.png" class="h-40 object-cover rounded-xl mb-4" />
+        <h3 class="font-bold text-lg mb-2">ATM Simulator</h3>
+        <p class="text-sm text-[#6b5247] mb-4">
+          Java-based terminal application simulating ATM operations.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="tag">Java</span><span class="tag">Spring</span>
+        </div>
+        <div class="mt-auto">
+          <a href="https://github.com/Vani21-ps/MiniATM_Simulator" class="link">Code</a>
+        </div>
+      </div>
+
+      <!-- 7 Cosmic Calculator -->
+      <div class="bg-[#f5eae1] rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col">
+        <img src="IMAGES/cosmiccal.png" class="h-40 object-cover rounded-xl mb-4" />
+        <h3 class="font-bold text-lg mb-2">Cosmic Calculator</h3>
+        <p class="text-sm text-[#6b5247] mb-4">
+          Interactive calculator with clean UI and smooth interactions.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="tag">JavaScript</span><span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+        <div class="mt-auto">
+          <a href="https://github.com/Vani21-ps/Cosmic_Calculator" class="link">Code</a>
+          <a href="https://sct-wd-2-mu.vercel.app/" class="link">Demo</a>
+        </div>
+      </div>
+
+      <!-- 8 HealthCare First -->
+      <div class="bg-[#f5eae1] rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col">
+        <img src="IMAGES/heathcare.png" class="h-40 object-cover rounded-xl mb-4" />
+        <h3 class="font-bold text-lg mb-2">HealthCare First</h3>
+        <p class="text-sm text-[#6b5247] mb-4">
+          A healthcare app that lets users easily book appointments with doctors anytime, anywhere.
+
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="tag">MERN STACK</span>
+        </div>
+        <div class="mt-auto">
+          <a href="https://github.com/kukreja167/BEE-Project---II.git" class="link">Code</a>
+        </div>
+      </div>
+
+      <!-- 9 Portfolio -->
+      <div class="bg-[#f5eae1] rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col">
+        <img src="IMAGES/Screenshot 2025-07-22 at 6.29.59 PM.png" class="h-40 object-cover rounded-xl mb-4" />
+        <h3 class="font-bold text-lg mb-2">Portfolio Website</h3>
+        <p class="text-sm text-[#6b5247] mb-4">
+          Personal portfolio showcasing projects, skills and certifications.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="tag">HTML</span><span class="tag">CSS</span>
+        </div>
+        <div class="mt-auto">
+          <a href="https://github.com/Vani21-ps/Portfolio_Website" class="link">Code</a>
+          <a href="https://portfoliowebsite-liard-nine.vercel.app/" class="link">Demo</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Reusable Tailwind helpers -->
+  <style>
+    .tag {
+      background:#fde5d6;
+      color:#9a4f2a;
+      padding:4px 12px;
+      border-radius:9999px;
+      font-size:0.75rem;
+    }
+    .link {
+      margin-right:12px;
+      color:#b66e51;
+      font-weight:600;
+    }
+  </style>
+<script>
+    feather.replace();
+
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+    const overlay = document.getElementById("menu-overlay");
+
+    toggle.onclick = () => {
+      menu.classList.toggle("scale-0");
+      overlay.classList.toggle("hidden");
+    };
+
+    overlay.onclick = () => {
+      menu.classList.add("scale-0");
+      overlay.classList.add("hidden");
+    };
+  </script>
+</body>
+</html>

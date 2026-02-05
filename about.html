@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Vani Jain</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f5f0eb] text-[#3b2f2f] font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#fffaf8] shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold">Vani Jain</a>
+
+      <!-- Menu Button -->
+      <button onclick="openMenu()" class="text-3xl focus:outline-none">
+        ☰
+      </button>
+    </div>
+  </nav>
+
+  <!-- Full Screen Menu Overlay -->
+  <div id="menuOverlay"
+    class="fixed inset-0 bg-[#f5f0eb] z-[999] hidden flex items-center justify-center">
+
+    <!-- Close Button -->
+    <button onclick="closeMenu()"
+      class="absolute top-6 right-6 text-4xl opacity-70 hover:opacity-100 transition">
+      ✕
+    </button>
+
+    <!-- Menu Links -->
+    <ul
+      class="space-y-7 text-xl sm:text-2xl font-semibold tracking-wide text-[#b57c63] text-center">
+
+      <li><a href="index.html" onclick="closeMenu()" class="hover:opacity-80 transition">HOME</a></li>
+      <li><a href="about.html" onclick="closeMenu()" class="hover:opacity-80 transition">ABOUT ME</a></li>
+      <li><a href="skills.html" onclick="closeMenu()" class="hover:opacity-80 transition">SKILLS</a></li>
+      <li><a href="certifications.html" onclick="closeMenu()" class="hover:opacity-80 transition">CERTIFICATIONS</a></li>
+      <li><a href="projects.html" onclick="closeMenu()" class="hover:opacity-80 transition">PROJECTS</a></li>
+      <li><a href="contact.html" onclick="closeMenu()" class="hover:opacity-80 transition">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <main class="pt-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20">
+
+    <!-- About Section -->
+    <section class="flex flex-col md:flex-row gap-16 items-center">
+
+      <!-- Left -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <div class="relative flex flex-col items-center gap-6 max-w-sm w-full">
+
+          <div class="absolute -top-8 -left-8 w-44 h-44 bg-[#ead8cc] rounded-full blur-2xl opacity-60"></div>
+
+          <div class="relative rounded-2xl shadow-lg overflow-hidden w-full max-w-xs">
+            <img src="IMAGES/pic2.JPG" alt="Vani Jain" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="text-center">
+            <h3 class="text-xl font-semibold">Vani Jain</h3>
+            <p class="text-sm text-[#7a6655]">Software Development Engineer | Full Stack</p>
+          </div>
+
+          <div class="w-full border-t border-[#e4d3c8]"></div>
+
+          <div class="grid grid-cols-3 gap-4 text-center w-full text-sm">
+            <div>
+              <p class="font-semibold text-lg">10+</p>
+              <p class="text-[#7a6655]">Projects</p>
+            </div>
+            <div>
+              <p class="font-semibold text-lg">5+</p>
+              <p class="text-[#7a6655]">Domains</p>
+            </div>
+            <div>
+              <p class="font-semibold text-lg">7+</p>
+              <p class="text-[#7a6655]">Certifications</p>
+            </div>
+          </div>
+
+          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank"
+            class="text-sm font-semibold text-[#b57c63] border border-[#b57c63] px-5 py-2 rounded-full hover:bg-[#b57c63] hover:text-white transition">
+            View LinkedIn Profile
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="w-full md:w-1/2 space-y-6 text-center md:text-left">
+        <h1 class="text-4xl font-extrabold">About Me</h1>
+        <p class="text-lg leading-relaxed">
+          I'm Vani Jain, a Computer Science student passionate about full-stack development, focused on building
+          clean, scalable, and user-centric applications.
+        </p>
+        <p class="italic text-[#7D6650]">
+          Bridging technical excellence with thoughtful design and real-world impact.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="bg-[#fffaf8] p-5 rounded-xl shadow-sm border-l-4 border-[#c8a69e]">
+            <h3 class="font-semibold mb-2">Full-Stack Development</h3>
+            <p class="text-sm text-[#5a4a4a]">Modern, scalable web apps.</p>
+          </div>
+          <div class="bg-[#fffaf8] p-5 rounded-xl shadow-sm border-l-4 border-[#c8a69e]">
+            <h3 class="font-semibold mb-2">Problem Solving</h3>
+            <p class="text-sm text-[#5a4a4a]">Elegant solutions to complex challenges.</p>
+          </div>
+          <div class="bg-[#fffaf8] p-5 rounded-xl shadow-sm border-l-4 border-[#c8a69e]">
+            <h3 class="font-semibold mb-2">Tech Expertise</h3>
+            <p class="text-sm text-[#5a4a4a]">JavaScript, React, Node, MongoDB.</p>
+          </div>
+          <div class="bg-[#fffaf8] p-5 rounded-xl shadow-sm border-l-4 border-[#c8a69e]">
+            <h3 class="font-semibold mb-2">Collaboration</h3>
+            <p class="text-sm text-[#5a4a4a]">Team-first, impact-driven.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script>
+    function openMenu() {
+      document.getElementById("menuOverlay").classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeMenu() {
+      document.getElementById("menuOverlay").classList.add("hidden");
+      document.body.style.overflow = "auto";
+    }
+  </script>
+
+</body>
+</html>
