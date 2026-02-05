@@ -6,45 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me - Vani Jain</title>
   <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body class="bg-[#f5f0eb] text-[#3b2f2f] font-sans">
+<nav
+    class="fixed top-0 left-0 w-full bg-[#fffaf8] bg-opacity-90 backdrop-blur-sm z-50 px-6 py-4 flex justify-between items-center shadow-sm">
 
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full z-50 bg-[#fffaf8] shadow-sm">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="index.html" class="text-2xl font-bold">Vani Jain</a>
+    <div class="text-xl font-bold select-none">Vani Jain</div>
 
-      <!-- Menu Button -->
-      <button onclick="openMenu()" class="text-3xl focus:outline-none">
-        ☰
-      </button>
-    </div>
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-6 uppercase font-semibold text-sm">
+      <li><a href="index.html" class="hover:text-[#b57c63]">Home</a></li>
+      <li><a href="about.html" class="text-[#b57c63]">About</a></li>
+      <li><a href="skills.html" class="hover:text-[#b57c63]">Skills</a></li>
+      <li><a href="certifications.html" class="hover:text-[#b57c63]">Certifications</a></li>
+      <li><a href="projects.html" class="hover:text-[#b57c63]">Projects</a></li>
+      <li><a href="contact.html" class="hover:text-[#b57c63]">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Toggle -->
+    <button id="menu-toggle" class="md:hidden">
+      <i data-feather="menu" class="w-7 h-7"></i>
+    </button>
   </nav>
 
-  <!-- Full Screen Menu Overlay -->
-  <div id="menuOverlay"
-    class="fixed inset-0 bg-[#f5f0eb] z-[999] hidden flex items-center justify-center">
+  <!-- Overlay -->
+  <div id="menu-overlay" class="fixed inset-0 bg-black/60 hidden z-40"></div>
 
-    <!-- Close Button -->
-    <button onclick="closeMenu()"
-      class="absolute top-6 right-6 text-4xl opacity-70 hover:opacity-100 transition">
-      ✕
-    </button>
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="fixed inset-0 z-[999] bg-[#fffaf6] bg-opacity-95 backdrop-blur-md flex flex-col items-center justify-center gap-6 text-lg uppercase font-semibold tracking-widest text-[#b57c63] scale-0 transition-transform duration-300">
 
-    <!-- Menu Links -->
-    <ul
-      class="space-y-7 text-xl sm:text-2xl font-semibold tracking-wide text-[#b57c63] text-center">
-
-      <li><a href="index.html" onclick="closeMenu()" class="hover:opacity-80 transition">HOME</a></li>
-      <li><a href="about.html" onclick="closeMenu()" class="hover:opacity-80 transition">ABOUT ME</a></li>
-      <li><a href="skills.html" onclick="closeMenu()" class="hover:opacity-80 transition">SKILLS</a></li>
-      <li><a href="certifications.html" onclick="closeMenu()" class="hover:opacity-80 transition">CERTIFICATIONS</a></li>
-      <li><a href="projects.html" onclick="closeMenu()" class="hover:opacity-80 transition">PROJECTS</a></li>
-      <li><a href="contact.html" onclick="closeMenu()" class="hover:opacity-80 transition">CONTACT</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
   </div>
-
   <!-- Main Content -->
   <main class="pt-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20">
 
@@ -126,15 +128,23 @@
 
   <!-- JS -->
   <script>
-    function openMenu() {
-      document.getElementById("menuOverlay").classList.remove("hidden");
-      document.body.style.overflow = "hidden";
-    }
+   feather.replace();
 
-    function closeMenu() {
-      document.getElementById("menuOverlay").classList.add("hidden");
-      document.body.style.overflow = "auto";
-    }
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+    const overlay = document.getElementById("menu-overlay");
+
+    toggle.onclick = () => {
+      menu.classList.toggle("scale-0");
+      overlay.classList.toggle("hidden");
+    };
+
+    overlay.onclick = () => {
+      menu.classList.add("scale-0");
+      overlay.classList.add("hidden");
+    };
+
+    const palette = ['#b66e51', '#d4b8aa', '#e6d3c5', '#a38474', '#7d6650'];
   </script>
 
 </body>
