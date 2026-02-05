@@ -1,74 +1,59 @@
-html, body, * {
-  cursor: none !important;
-}
+/* =========================
+   Global Base Styles
+========================= */
 
+html,
 body {
   margin: 0;
   padding: 0;
   color: #5e4632;
   background-color: #fdf6f0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-/* Custom Cursor */
-.custom-cursor,
-.cursor-follower {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  will-change: transform;
-  mix-blend-mode: difference;
-}
+/* =========================
+   Navigation Styles
+========================= */
 
-.custom-cursor {
-  width: 8px;
-  height: 8px;
-  background: #eecdc2;
-  transition: transform 0.1s ease;
-}
-
-.cursor-follower {
-  width: 24px;
-  height: 24px;
-  background: rgba(238, 205, 194, 0.4);
-  transition: transform 0.15s ease-out;
-}
-
-/* Nav link transitions */
 a.nav-link {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Nav bar styles on scroll */
+/* Navbar when scrolled */
 nav.nav-scrolled {
-  background-color: #fff5eb !important; /* Light beige */
+  background-color: #fff5eb;
   box-shadow: 0 2px 15px rgba(94, 70, 50, 0.2);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Active and hover nav link styling */
+/* Active & hover nav links */
 nav a.nav-link:hover,
 nav a.nav-link.active {
-  color: #b57c63 !important; /* Warm dusty pink */
+  color: #b57c63;
   font-weight: 600;
 }
 
-/* Cards with warm accent border */
+/* =========================
+   Cards & Hover Effects
+========================= */
+
 .card-yellow-border {
   border-width: 2px;
-  border-color: #eecdc2; /* Nude pink */
+  border-color: #eecdc2;
 }
 
-/* Slight scale-up on hover */
-.hover-grow:hover {
-  transform: scale(1.05);
+.hover-grow {
   transition: transform 0.3s ease;
 }
 
-/* Scrollbar customization for Skills section */
+.hover-grow:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   Skills Scrollbar Styling
+========================= */
+
 #skills-expertise .expertise-areas {
   max-height: 350px;
   overflow-y: auto;
@@ -81,16 +66,19 @@ nav a.nav-link.active {
 }
 
 #skills-expertise .expertise-areas::-webkit-scrollbar-track {
-  background: #f4eade; /* Light beige */
+  background: #f4eade;
   border-radius: 9999px;
 }
 
 #skills-expertise .expertise-areas::-webkit-scrollbar-thumb {
-  background-color: #eecdc2; /* Nude pink */
+  background-color: #eecdc2;
   border-radius: 9999px;
 }
 
-/* Responsive tweaks for images */
+/* =========================
+   Responsive Image Tweaks
+========================= */
+
 @media (max-width: 768px) {
   .about-image-container,
   .hero-image-container {
